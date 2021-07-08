@@ -1,0 +1,271 @@
+
+body {
+background-color: #00aae4;
+font-family: Arial;
+margin-top: 30px;
+margin-right: 50px;
+margin-bottom: 20px;
+margin-left: 50px;
+}
+
+header{
+	width:100%;
+	background: orange;
+	font-family: Arial;
+	display: flex;
+	justify-content: space-between;
+}
+.logo{
+	color: white;
+
+}
+#btn-menu {
+display: none;
+
+}
+
+header h1{
+	display: inline;
+	text-align: left;
+	margin:0px;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	font-size: 25px;
+
+}
+
+header label {
+	display: inline;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+
+
+}
+header label:hover {
+	cursor: pointer;
+	background: rgba(0,0,0,0.3);
+}
+
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: none;
+}
+
+#movie{
+	padding: 15px;
+	margin-top: 3px;
+	height: 10px;
+	width: 500px;
+}
+.menu li:hover{
+	background: rgba(0,0,0,0.3);
+}
+
+.menu li a {
+	display: block;
+	padding: 15px 20px;
+	border-bottom: 1px solid white;
+	color: #fff;
+	text-decoration: none;
+
+}
+
+@media {
+	header label {
+		display: block;
+	}
+
+	.menu {
+		position: absolute;
+		background: gray;
+		right:0;
+		top: 80px;
+	}
+
+	.menu ul{
+		flex-direction: column;
+		
+	}
+
+	.menu li{
+		border-top: lpx solid #fff;
+
+	}
+
+	#btn-menu:checked ~ .menu {
+		align-content: left;
+	}
+	#btn-menu:checked ~ .menu ul{
+		display: block;
+		width: 100%;
+	}
+	
+}
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+#contenedor h1{
+	color: #2f2f30;
+position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Impact;
+    font-size: 80px;
+}
+
+#contenedor p{
+	color: brown;
+position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#contenedor img{
+	width: 700px;
+	height: 100%;
+}
+
+#contenedor {
+	width: 700px;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+#contenedor ul {
+	width: 2800px;
+	list-style: none;
+	display: flex;
+
+	animation: slide 20s infinite alternate;
+
+}
+
+@keyframes slide {
+	0% {margin-left: 0px;}
+	20% {margin-left: 0px;}
+	25% {margin-left: -700px;}
+	45% {margin-left: -700px;}
+	50% {margin-left: -1400px;}
+	70% {margin-left: -1400px;}
+}
+
+
+
+h1{
+	color: white;
+	font-family: Impact;
+}
+h2{
+	color: yellow;
+	font-size: 25px;
+	font-family: Komika Axis;
+}
+
+.estrella{
+display: block;
+	line-height: 0;
+	margin: 0;
+	float: left;
+width: 20px;
+}
+
+h3{
+	margin: 7px;
+	text-align: center;
+
+}
+
+p{
+	margin: 1px;
+	text-align: center;
+}
+
+.clasificacion{
+font-size: 15px;
+margin-right: 20px;
+text-align: left;
+}
+
+.iniciopag h1{
+	display: inline-block;
+	margin: 10px;
+}
+
+.pelicula1{
+
+    border-radius: 20px; 
+    display: inline-block;
+	color: white;
+	background-color: gray;
+	width: 176px;
+	margin: 10px;
+}
+
+.poster1{
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	width: 176px;
+	height: 250px;
+}
+.pelicula2{
+border-radius: 20px;
+    display: inline-block;
+	color: white;
+	background-color: gray;
+	width: 176px;
+	margin: 10px;
+}
+
+.poster2{
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	width: 176px;
+	height: 250px;
+}
+
+.titulopel{
+	font-family: Britannic Bold;
+	font-size: 25px;
+}
+
+.descpel{
+	font-family: Cambria;
+	font-size: 15px;
+}
+
+.inicio{
+	display: block;
+}
+footer{
+	color: white;
+	text-align:center;
+	font-size: 15px;
+	}
+
+
+.formulario{color: white;}
+.sexo{text-align: left;
+margin-top: 10px}
+.date{text-align: left;margin-top: 10px}
+
+.instagram{
+float: center;
+width: 15px;
+}
+.facebook{
+	display: inline-block;
+	width: 15px;
+}
+.credits{
+
+}
